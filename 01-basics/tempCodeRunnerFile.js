@@ -1,3 +1,3 @@
-let gameCounter = 100;
-gameCounter++
-console.log(gameCounter);
+console.log(undefined > 0)
+// console.log(undefined == 0)
+// console.log(undefined >= 0)
