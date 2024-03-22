@@ -1,2 +1,3 @@
-console.log(typeof score);
-// console.log(typeof(score));
+let gameCounter = 100;
+gameCounter++
+console.log(gameCounter);
