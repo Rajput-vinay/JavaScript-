@@ -36,7 +36,7 @@ const myFunction =function (){
 }
 
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
 
 
 
@@ -50,3 +50,73 @@ console.log(typeof myFunction)
 // BigInt	              "bigint"	                       BigInt
 // String	              "string"	                       String
 // Symbol	              "symbol"	                       Symbol
+
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//  Stack (Primitive) stack me copy milta hai, Heap (Non Primitive) // heap orginal memory milti hai
+
+let myYoutubeName = "vinayrajput"
+
+let anotherName = myYoutubeName
+    
+     anotherName = "chaiAurCode"
+
+     console.log(myYoutubeName)
+     console.log(anotherName)  // copy me change hota hai orginal memory me nhi
+
+
+
+     let userOne ={
+        userEmail:"vinayrjput1@gmail.com",
+        upi:"konsiUpi"
+     }
+
+     let userTwo = userOne;   // orginal value ki reference or orginal memory militi hai
+         userTwo.userEmail = "hitesh"
+
+         console.log(userOne.userEmail)
+         console.log(userTwo.userEmail)
+
+    //   _ _ _ _ _ _ _ __ _ _ _ _ _ _ _                         
+    //  |                              |                       
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                              
+    //  |                              |
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                             
+    //  |                              |
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                              
+    //  |                              |
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                              
+    //  |                              |
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                              
+    //  |       anotherName            |
+    //  |_ _ __ __ _ __ _ _ _ __ _ _ _ |                              
+    //  |         myYoutubeName        |
+    //  _ _ _ _ __ _ __ _ __ _ _ __ _ _ 
+    //           stack memory
+
+
+
+
+    // _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ 
+    //  |                              |
+    //  |                              |                              
+    //  |                              |
+    //  |                              |                             
+    //  |                              |
+    //  |                              |                              
+    //  |                              |
+    //  |                              |                              
+    //  |                              |
+    //  |                              |                              
+    //  |                              |
+    //  |                              |                              
+    //  |                              |
+    //  _ _ _ _ __ _ __ _ __ _ _ __ _ _ 
+    //           Heap memory
+
+
