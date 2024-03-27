@@ -25,7 +25,7 @@ To print many values
 
 const accountId = 144553
 
-let accountEmail = “chandni@google.com”
+let accountEmail = “vinay@google.com”
 
 var accountPassword = “12345”
 
@@ -90,7 +90,7 @@ The === operator is used for strict equality comparison. It not only compares th
 — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 String Methods
-const name=”Chandni”
+const name=”“vinay”
 
 const univ=”iiitk”
 
@@ -116,7 +116,7 @@ console.log(newstr)
 
 PS C:\Users\chand\OneDrive\Desktop\working with API’s> node js-practice.js
 
-I am Chandni and I study iniiitk
+I am “vinay and I study iniiitk
 
 c
 
@@ -130,13 +130,13 @@ e
 
 [String: ‘cse21030’]
 
-const newStringOne = “ chandni “
+const newStringOne = “ “vinay “
 
 console.log(newStringOne);
 
 console.log(newStringOne.trim());
 
-const url = “https://chandni.com/chandni%20choudhary"
+const url = 
 
 console.log(url.replace(‘%20’, ‘-’))
 
@@ -146,15 +146,15 @@ console.log(url.split(‘/’));
 
 PS C:\Users\chand\OneDrive\Desktop\working with API’s> node js-practice.js
 
-chandni
+“vinay
 
-chandni
+“vinay
 
-https://chandni.com/chandni-choudhary
+
 
 false
 
-[ ‘https:’, ‘’, ‘chandni.com’, ‘chandni%20choudhary’ ]
+[ ‘https:’, ‘’, ‘“vinay.com’, ‘“vinay%20choudhary’ ]
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — -
 
@@ -285,11 +285,11 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
 const real_another_array = another_array.flat(Infinity) [1,2,3,4,5,6,7]
 
-console.log(Array.isArray(“chandni”)) false
+console.log(Array.isArray(““vinay”)) false
 
-console.log(Array.from(“chandni”)) [ ‘H’, ‘i’, ‘t’, ‘e’, ‘s’, ‘h’ ]
+console.log(Array.from(““vinay”)) [ ‘H’, ‘i’, ‘t’, ‘e’, ‘s’, ‘h’ ]
 
-console.log(Array.from({name: “chandni”})) // interesting it wouldnot work
+console.log(Array.from({name: ““vinay”})) // interesting it wouldnot work
 
 let score1 = 100
 
@@ -373,7 +373,7 @@ console.log(add(…A)); // Outputs: 6
 
 const chai = function () {
 
-let username = “chandni”
+let username = ““vinay”
 
 console.log(username);
 
@@ -381,7 +381,7 @@ console.log(username);
 
 const chai1 = () => {
 
-let username = “chandni”
+let username = ““vinay”
 
 console.log(username);
 
