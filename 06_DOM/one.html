@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="bg-black">
+              <h1 id ="title"class="heading">Dom learnig on Chai aur code<span style="display: none;">Text text</span></h1>
+              <h2>Lorem ipsum dolor sit.</h2>
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <input type="password" name="" id="">
+              <ul>
+                  <li class ="listItem">two</li>
+                  <li class ="listItem">one</li>
+                <li class ="listItem">three</li>
+                <li class ="listItem">three</li>
+              </ul>
+    </div>
+</body>
+</html>
+<!-- 
+Difference between innertext, innerContent, innerHTML
+inner-text: contains only visible test inside selected ele
+
+innerContent: constains both visible and hidden elements inside selected ele
+
+innerHTML: entire HTML With tags and attributes
+
+— — — — — — — — — — — — — — — — — — — — — — — — — -
+
+DOM selecting an element
+To get a DOM element using JavaScript, you can use various methods provided by the Document Object Model (DOM) API. Here are some common ways to select and retrieve DOM elements:
+
+getElementById():
+
+This method allows you to select an element by its unique id attribute.
+
+const elementById = document.getElementById(“elementId”);
+
+querySelector():
+
+The querySelector() method lets you select an element using a CSS selector.
+
+const element = document.querySelector(“.className”); // Selects by class
+
+const anotherElement = document.querySelector(“#elementId”); // Selects by id
+
+querySelectorAll():
+
+Use querySelectorAll() to select multiple elements that match a CSS selector.
+
+const elements = document.querySelectorAll(“.className”);
+
+getElementsByClassName():
+
+This method retrieves elements by their class name.
+
+const elementsByClass = document.getElementsByClassName(“className”);
+
+getElementsByTagName():
+
+Use getElementsByTagName() to select elements by their tag name;
+
+const elementsByTag = document.getElementsByTagName(“tagName”);
+
+const secondLang = document.querySelector(“li:nth-child(2)”)
+
+console.log(secondLang);
+
+querySelectorAll() and getElementByClassName() acts like array -->
