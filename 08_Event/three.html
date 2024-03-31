@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+// setInterval take a three parameter
+// in setInterval every interval they run without stop but in settimeout me srif once run after set interable
+
+
+// setInterval(function name(){
+//     console.log("vinay")
+// },1000)
+
+
+const name = function(){
+  const h1 = document.querySelector('h1').innerHTML = "I Love JavaScript"
+console.log(h1)
+  
+}
+
+
+// clearInterval(clear) // we can't use thats ways
+
+const clear = function(){
+    const clear = setInterval(name,1000)
+}
+
+document.querySelector("#start").addEventListener('click',function(){
+    clear()
+    console.log("Start the event")
+})
+
+document.querySelector("#stop").addEventListener('click',function(){
+    clearInterval(clear)
+    console.log("stopped the Event")
+})
+
+
+
+</script>
+</html>

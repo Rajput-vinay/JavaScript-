@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // set time out me 2 paramater use hote hai
+
+
+    // setTimeout(function(){
+    //     console.log("Vinay")
+    // },1000)
+
+    //  one more way 
+
+    const fun =function(){
+        console.log("Vinay")
+    }
+
+    const changeMe = function(){
+        document.querySelector( 'h1').innerHTML = "I Love JavaScript"
+        console.log("changed Successfully")
+    }
+   const clear = setTimeout(changeMe , 1000)  // only need to give refrence of that function not need to executed 
+  
+
+    //  need to stop setTimeOUt so we used clearTimeOUt
+
+    // clearTimeout(clear) // but we donot use clear timeout function in that way because there is no use of setTimeout
+
+    //  so we give the event to button when we click on button they do clearTimeOut
+
+    document.querySelector("#stop").addEventListener('click',function stop(){
+        clearTimeout(clear)
+    })
+</script>
+</html>
